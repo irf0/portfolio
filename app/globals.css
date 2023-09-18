@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+#navlink {
+    display: inline-block;
+    padding-bottom: 2px;
+    background-image: linear-gradient(#2ffd2f 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+        background-size 0.3s,
+        background-position 0s 0.3s;
+ 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+#navlink:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+    animation-timing-function: ease-out;
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Hide the scrollbar track */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Adjust the width to your preference */
+}
+
+/* Hide the scrollbar thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Make the thumb transparent */
+}
+
+
+ 
+ 
+.canvas{
+    height:"100%";
+    width:"100%";
 }
