@@ -10,35 +10,27 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
 import {
-  Build,
   Checklist,
   Code,
-  CodeOff,
   Construction,
-  DirectionsWalk,
-  EmojiNature,
-  Leaderboard,
   Lightbulb,
   Mood,
   SentimentDissatisfied,
   Smartphone,
-  Star,
   TravelExplore,
   TrendingUp,
-  Warning,
-  WbSunny,
 } from "@mui/icons-material";
-import { Grow } from "@mui/material";
-import { BiInfinite } from "react-icons/bi";
+import { isMobile } from "react-device-detect";
 
 export default function CustomizedTimeline() {
   return (
     <Timeline position="alternate">
-      <TimelineItem>
+      <TimelineItem className="sm:flex-row">
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}
           align="right"
           variant="body2"
+          style={{ fontWeight: "bold" }}
         >
           May, 2019
         </TimelineOppositeContent>
@@ -49,7 +41,7 @@ export default function CustomizedTimeline() {
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <TimelineContent>
           <Typography variant="h6" component="span">
             Initial Spark ⚡
           </Typography>
@@ -58,7 +50,11 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body2">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          variant="body2"
+          fontWeight="bold"
+        >
           June, 2019
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -68,7 +64,7 @@ export default function CustomizedTimeline() {
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <TimelineContent sx={{ py: "2px" }}>
           <Typography variant="h6" component="span">
             Preparation Begins
           </Typography>
@@ -77,7 +73,11 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body2">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          variant="body2"
+          fontWeight="bold"
+        >
           August, 2021
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -87,7 +87,7 @@ export default function CustomizedTimeline() {
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <TimelineContent sx={{ py: "2px" }}>
           <Typography variant="h6" component="span">
             Failure
           </Typography>
@@ -99,7 +99,11 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body2">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          variant="body2"
+          style={{ fontWeight: "bold" }}
+        >
           September, 2021
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -109,7 +113,7 @@ export default function CustomizedTimeline() {
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <TimelineContent sx={{ py: "2px" }}>
           <Typography variant="h6" component="span">
             Fresh Start🤞
           </Typography>
@@ -128,7 +132,11 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body2">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          variant="body2"
+          style={{ fontWeight: "bold" }}
+        >
           November, 2021
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -156,13 +164,17 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body2">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          variant="body2"
+          style={{ fontWeight: "bold" }}
+        >
           January, 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary" style={{ background: "#7013eb" }}>
-            <TrendingUp />
+            <TravelExplore />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -185,7 +197,11 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body2">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          variant="body2"
+          style={{ fontWeight: "bold" }}
+        >
           March, 2022 - October, 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -206,7 +222,11 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body2">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          variant="body2"
+          style={{ fontWeight: "bold" }}
+        >
           December, 2022 - July, 2023
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -226,13 +246,17 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body2">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          variant="body2"
+          style={{ fontWeight: "bold" }}
+        >
           August, 2023 - Infinity
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary" style={{ background: "#08c983" }}>
-            <TravelExplore />
+            <TrendingUp />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -241,7 +265,7 @@ export default function CustomizedTimeline() {
             Journey has just started ↗
           </Typography>
           <Typography>Yet to go a long way.</Typography>
-          <Typography>Yet achieve great milestones.🏁</Typography>
+          <Typography>Yet to achieve great milestones.🏁</Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>

@@ -1,5 +1,3 @@
-"use strict";
-
 const canvas = document.querySelectorAll(".canvas")[0];
 canvas.height = canvas.clientHeight * 10;
 canvas.width = canvas.clientWidth * 10;

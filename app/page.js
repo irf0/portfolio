@@ -1,30 +1,36 @@
-import About from "./_components/About";
-import Contact from "./_components/Contact";
-import Hero from "./_components/Hero";
-import Projects from "./_components/Projects";
-import Skills from "./_components/Skills";
+import dynamic from "next/dynamic";
+const About = dynamic(() => import("./_components/About"));
+const Contact = dynamic(() => import("./_components/Contact"));
+const Hero = dynamic(() => import("./_components/Hero"));
+const Projects = dynamic(() => import("./_components/Projects"));
+const Services = dynamic(() => import("./_components/Services"));
+const Skills = dynamic(() => import("./_components/Skills"));
 import "./globals.css";
 
 export default function Home() {
   return (
     <div>
-      <section
-        id="section1"
-        className="border-b dark:border-gray-700 border-gray-300 p-20"
-      >
+      <section id="home">
         <Hero />
       </section>
-      <section id="section2">
+
+      <section id="about">
         <About />
       </section>
 
-      <section id="section3">
+      <section id="skills">
         <Skills />
       </section>
-      <section id="section4">
+
+      <section id="projects">
         <Projects />
       </section>
-      <section id="section5">
+
+      <section id="services">
+        <Services />
+      </section>
+
+      <section id="contact">
         <Contact />
       </section>
     </div>

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./_components/Navbar";
 import Provider from "./providers";
+import Footer from "./_components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,12 +34,17 @@ export default function RootLayout({ children }) {
       </Head>
 
       <body
-        className={`${inter.className}sm:p-2 p-4 overflow-auto dark:bg-gray-800 dark:text-gray-300 bg-slate-100 text-gray-700`}
+        className={`${inter.className}sm:p-2 p-4 selection:bg-[#00e676] selection:dark:text-gray-700 overflow-auto dark:bg-gray-800 dark:text-gray-300 bg-slate-100 text-gray-700`}
       >
         <Provider>
-          <Navbar />
-          {children}
+          <header>
+            <Navbar />
+          </header>
+          <main> {children}</main>
         </Provider>
+        <footer className="border-t border-gray-300 dark:border-gray-700">
+          <Footer />
+        </footer>
       </body>
     </html>
   );
