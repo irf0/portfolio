@@ -1,6 +1,8 @@
 import React from "react";
 import { RoughNotationGroup } from "react-rough-notation";
-import { WordHighlight } from "./WordHighlight";
+
+import dynamic from "next/dynamic";
+const WordHighlight = dynamic(() => import("./WordHighlight"));
 
 function Hero() {
   const colors = ["#F59E0B", "#dedede", "#00e676", "#10B981", "#3B82F6"];

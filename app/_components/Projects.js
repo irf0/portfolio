@@ -1,4 +1,4 @@
-import Image from "next/image";
+import dynamic from "next/dynamic";
 import React from "react";
 import projectData from "../utils/projectData";
 import { ArrowRightAlt, GitHub } from "@mui/icons-material";

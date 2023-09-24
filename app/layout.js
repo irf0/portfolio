@@ -1,9 +1,10 @@
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./_components/Navbar";
 import Provider from "./providers";
-import Footer from "./_components/Footer";
+const Footer = dynamic(() => import("./_components/Footer"));
 
 const inter = Inter({ subsets: ["latin"] });
 
