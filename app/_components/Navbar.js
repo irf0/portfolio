@@ -16,14 +16,12 @@ function Navbar() {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
-
   const openMenu = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
-
+  if (!mounted) {
+    return null;
+  }
   return (
     <div className="p-5 sm:p-0 flex justify-between align-middle border-b border-gray-300 dark:border-gray-700 mb-2">
       {isMobile && (

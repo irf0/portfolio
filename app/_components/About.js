@@ -45,7 +45,7 @@ function About() {
           <h2 className="dark:text-white font-extrabold">📩Get in touch</h2>
           <p className="font-semibold ml-6">
             Let's collaborate and make your digital dreams a reality. Drop me a
-            message, and let's turn your vision into code.
+            message below, and let's turn your vision into reality.
           </p>
         </div>
       </div>

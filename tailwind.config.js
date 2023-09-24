@@ -68,6 +68,7 @@ module.exports = {
         // => @media (min-width: 1280px and max-width: 1535px) { ... }
       },
       width: {
+        150: "150px",
         190: "190px",
         275: "275px",
         300: "300px",
@@ -78,10 +79,12 @@ module.exports = {
         508: "508px",
         "95vw": "95vw",
         "45vw": "45vw",
+        "50vw": "50vw",
         "180%": "180%",
       },
       height: {
         80: "80px",
+        250: "250px",
         340: "340px",
         370: "370px",
         420: "420px",

@@ -14,12 +14,19 @@ const page = ({ params }) => {
   return (
     <div>
       <h1>The name is {project?.name}</h1>
-      <Image
-        src={project?.imageURL}
-        alt={project?.name}
-        width={100}
-        height={100}
-      />
+      <div className="flex sm:flex-col gap-3 ml-2 mr-7 flex-wrap">
+        {project?.imageURL?.map((image) => (
+          <Image
+            src={image}
+            alt="project-img"
+            height={150}
+            width={150}
+            className="sm:mx-0"
+            loading="lazy"
+          />
+        ))}
+      </div>
+
       <p>{project?.description}</p>
       <p>{project?.tags}</p>
     </div>

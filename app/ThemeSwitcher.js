@@ -1,8 +1,6 @@
 "use client";
 import "./globals.css";
-
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 
 const ThemeSwitcher = ({ mounted, setMounted, theme, setTheme }) => {
