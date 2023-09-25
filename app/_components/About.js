@@ -31,7 +31,8 @@ function About() {
           <p className="font-semibold ml-6">
             To blend technology and creativity, shaping user-centric solutions
             that leave a lasting impression. From <strong>front-end</strong>{" "}
-            finesse to <strong>back-end</strong> wizardry, I've got it covered.
+            finesse to <strong>back-end</strong> wizardry, I've got it covered
+            because, I am literally obsessed to learn more about this thing!.
           </p>
           <h2 className="dark:text-white font-extrabold">⏳Free Time?</h2>
           <p className="font-semibold ml-6">

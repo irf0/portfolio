@@ -35,13 +35,11 @@ function Projects() {
             <h1 id="navlink" className="text-2xl font-bold p-3">
               {project?.name}
             </h1>
-            <p className="font-semibold text-lg flex-wrap p-3">
-              {project?.description}
-            </p>
+            <p className="flex-wrap p-3 text-lg">{project?.description}</p>
 
             <div className="flex flex-wrap gap-3">
               {project?.tags.map((tag) => (
-                <div className="dark:rounded-sm italic p-0.5 px-1 border border-gray-400 dark:border-gray-200 w-fit text-sm font-semibold dark:hover:bg-white hover:bg-black hover:text-white dark:hover:text-black">
+                <div className="dark:rounded-sm italic p-0.5 px-1 border border-gray-400 dark:border-gray-700 w-fit text-sm font-semibold dark:hover:bg-white hover:bg-black hover:text-white dark:hover:text-black">
                   <p>{tag}</p>
                 </div>
               ))}

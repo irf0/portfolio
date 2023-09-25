@@ -24,7 +24,7 @@ function Contact() {
       <div className="flex sm:flex-col justify-center gap-7">
         <div className="border dark:border-gray-700 border-gray-300 rounded-lg my-6 w-fit flex flex-col p-6 gap-4 place-items-center">
           <h1 className="text-center">
-            <span className="font-bold text-xl sm:text-lg border-b-2 border-[#2ffd2f] sm:border-b">
+            <span className="font-bold text-xl sm:text-lg">
               Have a Specific Message?
             </span>{" "}
             <br /> Feel free to send a message and I'll get back to you.
@@ -55,9 +55,7 @@ function Contact() {
         </div>
 
         <div className="border dark:border-gray-700 border-gray-300 rounded-lg my-6 w-350 sm:w-330 flex flex-col p-6 gap-4 place-items-center">
-          <h1 className="text-xl sm:text-lg font-bold border-b-2 sm:border-b border-[#2ffd2f]">
-            Get in touch today.
-          </h1>
+          <h1 className="text-xl sm:text-lg font-bold">Get in touch today.</h1>
           <a href="https://wa.link/uow8lm" target="_blank">
             <div className="flex gap-1">
               <Phone className="text-[#25d366]" />
