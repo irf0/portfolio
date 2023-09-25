@@ -16,7 +16,7 @@ const page = ({ params }) => {
         <h1 className="text-2xl font-bold p-2 text-center">Video Demo</h1>
         <div className="place-self-center border-2 rounded-md">
           <video width="320" height="240" controls autoPlay>
-            <source src="/assets/foodashvid.mp4" type="video/mp4" />
+            <source src={project?.videoURL} type="video/mp4" />
           </video>
         </div>
 
@@ -26,7 +26,6 @@ const page = ({ params }) => {
         <div className="flex w-fit place-content-center place-self-center  gap-3 ml-2 p-5 mr-7 flex-wrap ">
           {project?.imageURL?.map((image) => (
             <img
-              key={project?.id}
               src={image}
               alt="project-img"
               className="sm:mx-0 h-370 w-190"
@@ -38,7 +37,7 @@ const page = ({ params }) => {
 
       <h1 className="text-2xl font-bold p-2 text-center mt-5">About the app</h1>
       <div className="flex justify-center sm:justify-normal">
-        <div className=" w-45vw sm:w-fit sm:place-self-auto">
+        <div className="w-45vw sm:w-fit sm:place-self-auto">
           <h1 className="text-2xl font-bold p-3">{project?.name}</h1>
 
           <h2 className="text-2xl font-bold p-1 px-4">Overview</h2>
@@ -46,8 +45,13 @@ const page = ({ params }) => {
             {project?.description}
           </p>
 
-          <h2 className="text-2xl font-bold p-1">Description</h2>
-          <p className="font-semibold text-lg flex-wrap p-3"></p>
+          <h2 className="text-2xl font-bold p-1">Technologies Used</h2>
+
+          <div className="ml-6 p-3">
+            {project?.techs?.map((tech) => (
+              <p>• {tech}</p>
+            ))}
+          </div>
         </div>
       </div>
     </div>

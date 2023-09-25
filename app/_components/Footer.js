@@ -10,7 +10,7 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <div className="flex p-10 sm:p-5 justify-evenly sm:justify-between">
+      <div className="flex p-6 sm:p-4 justify-evenly sm:justify-between">
         <a href="#navbar">
           <div>
             <h1 className="text-3xl flex place-items-center sm:text-lg leading-tight font-extrabold text-[#00e676]">

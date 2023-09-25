@@ -11,7 +11,14 @@ export default [
     videoURL: "/assets/foodashvid.mp4",
     description:
       "FoodDash is a demo React Native mobile application that allows users to discover and order food from local restaurants. It leverages the power of the Yelp Fusion API to provide real-time restaurant data, reviews, and menu information.",
-
+    techs: [
+      "React Native",
+      "Yelp Fusion API",
+      "Redux for state management",
+      "React Navigation for routing",
+      "Firebase for user authentication",
+      "Axios for API requests",
+    ],
     tags: [
       "React Native",
       "Yelp Fusion API",
@@ -37,7 +44,7 @@ export default [
       "/assets/projects/shoe9.jpeg",
       "/assets/projects/shoe10.jpeg",
     ],
-
+    videoURL: "/assets/nikevid.mp4",
     description:
       "Impulse Sneaxx is a cutting-edge mobile e-commerce application designed for shoe enthusiasts. Developed using the MERN (MongoDB, Express.js, React Native, Node.js) stack, this app provides a seamless and user-friendly experience for buying shoes online.",
 
@@ -51,6 +58,14 @@ export default [
       "Redux",
       "Axios API",
       "Stripe",
+    ],
+    techs: [
+      "React Native",
+      "Yelp Fusion API",
+      "Redux for state management",
+      "React Navigation for routing",
+      "Firebase for user authentication",
+      "Axios for API requests",
     ],
     github: "https://github.com/irf0/NikeFrontend",
   },

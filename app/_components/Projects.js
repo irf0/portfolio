@@ -1,11 +1,11 @@
 import React from "react";
 import projectData from "../utils/projectData";
-import { ArrowRightAlt, GitHub } from "@mui/icons-material";
+import { GitHub } from "@mui/icons-material";
 
 //This is Projects component
 function Projects() {
   return (
-    <div className="p-10 mx-10 sm:p-5 sm:mx-2 sm:justify-center border-b border-gray-300 dark:border-gray-700">
+    <div className="p-10 mx-10 sm:p-5 sm:mx-2 sm:justify-center border-b border-gray-300 dark:border-gray-800">
       <h1 className="text-5xl sm:text-3xl font-extrabold">projects.</h1>
       <p className="p-4 font-bold text-xl">
         Here are some projects I have worked on.

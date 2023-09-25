@@ -25,7 +25,7 @@ function Navbar() {
   return (
     <div
       id="navbar"
-      className="p-5 sm:p-0 flex justify-between align-middle border-b border-gray-300 dark:border-gray-700 mb-2"
+      className="p-5 sm:p-0 flex justify-between align-middle border-b border-gray-300 dark:border-gray-800 mb-2"
     >
       {isMobile && (
         <button
@@ -97,7 +97,7 @@ function Navbar() {
           className={`${
             isMobile || isSidebarOpen
               ? "hidden"
-              : "self-center gap-6 flex text-lg p-3 px-14 rounded-xl dark:border-gray-800 shadow-lg dark:shadow-2xl"
+              : "self-center gap-6 flex text-lg p-3 px-14 rounded-xl border dark:border-gray-800 shadow-lg dark:shadow-3xl"
           }`}
         >
           <a

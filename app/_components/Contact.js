@@ -1,12 +1,4 @@
-import {
-  Email,
-  GitHub,
-  Instagram,
-  LinkedIn,
-  Phone,
-  Twitter,
-  WhatsApp,
-} from "@mui/icons-material";
+import { Email, Phone } from "@mui/icons-material";
 import React from "react";
 
 function Contact() {
@@ -32,18 +24,18 @@ function Contact() {
           <input
             type="text"
             placeholder="Your name."
-            className="p-4 rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
+            className="p-4 focus:outline-none rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
           />
           <input
             type="email"
             placeholder="Your email."
-            className="p-4 rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
+            className="p-4 focus:outline-none rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
           />
           <textarea
             name="message"
             placeholder="Your message."
             rows={4}
-            className="p-4 rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
+            className="p-4 focus:outline-none rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
           />
 
           <button

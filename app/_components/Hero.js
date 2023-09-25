@@ -7,7 +7,7 @@ const WordHighlight = dynamic(() => import("./WordHighlight"));
 function Hero() {
   const colors = ["#F59E0B", "#dedede", "#00e676", "#10B981", "#3B82F6"];
   return (
-    <div className="flex mb-10 justify-around sm:flex-col border-b dark:border-gray-700 border-gray-300 p-24 sm:p-5">
+    <div className="flex mb-10 justify-around sm:flex-col border-b dark:border-gray-800 border-gray-300 p-24 sm:p-5">
       <div className="bg-[#00e676] text-[#e3e2e2] rounded-full place-self-center h-40 w-40 sm:flex lg:hidden xl:hidden">
         <p>My Image here..</p>
       </div>

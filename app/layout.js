@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
       </Head>
 
       <body
-        className={`${inter.className}sm:p-2 p-4 selection:bg-[#00e676] selection:dark:text-gray-700 overflow-auto dark:bg-black dark:text-gray-300 bg-slate-100 text-gray-700`}
+        className={`${inter.className}sm:p-2 p-4 selection:bg-[#00e676] selection:dark:text-gray-700 overflow-auto dark:bg-gray-950 dark:text-gray-300 bg-slate-100 text-gray-700`}
       >
         <Provider>
           <header>
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
           </header>
           <main> {children}</main>
         </Provider>
-        <footer className="border-t border-gray-300 dark:border-gray-700">
+        <footer className="border-t border-gray-300 dark:border-gray-800">
           <Footer />
         </footer>
       </body>

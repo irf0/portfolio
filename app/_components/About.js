@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="flex flex-col justify-center p-10 sm:p-1 sm:flex-nowrap flex-wrap mx-10 border-b border-gray-300 dark:border-gray-700 sm:mx-0">
+    <div className="flex flex-col justify-center p-10 sm:p-1 sm:flex-nowrap flex-wrap mx-10 border-b border-gray-300 dark:border-gray-800 sm:mx-0">
       <div>
         <h1 className="text-5xl sm:text-3xl font-extrabold">about me.</h1>
       </div>
