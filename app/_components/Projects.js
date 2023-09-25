@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import React from "react";
 import projectData from "../utils/projectData";
 import { ArrowRightAlt, GitHub } from "@mui/icons-material";
@@ -34,32 +33,34 @@ function Projects() {
             </div>
 
             <h1 id="navlink" className="text-2xl font-bold p-3">
-              {project.name}
+              {project?.name}
             </h1>
-            <p className="font-semibold flex-wrap p-3">{project.description}</p>
+            <p className="font-semibold text-lg flex-wrap p-3">
+              {project?.description}
+            </p>
 
             <div className="flex flex-wrap gap-3">
-              {project.tags.map((tag) => (
-                <div className="dark:rounded-sm italic p-0.5 px-1 border border-gray-400 dark:border-gray-200 w-fit text-sm font-semibold dark:hover:bg-gray-400 hover:bg-slate-900 hover:text-white dark:hover:text-slate-700">
+              {project?.tags.map((tag) => (
+                <div className="dark:rounded-sm italic p-0.5 px-1 border border-gray-400 dark:border-gray-200 w-fit text-sm font-semibold dark:hover:bg-white hover:bg-black hover:text-white dark:hover:text-black">
                   <p>{tag}</p>
                 </div>
               ))}
             </div>
 
-            <div className=" flex gap-3 justify-center">
+            <div className="flex gap-3 justify-center">
               <a href={`/Projects/${project.id}`}>
                 <button
                   type="button"
-                  className="sm:mx-2 align-middle font-bold text-lg text-gray-800 sm:p-1 p-2 my-3 rounded-md bg-[#00e676]"
+                  className="sm:mx-2 flex align-middle px-3 font-bold text-lg text-gray-800 sm:p-1 p-1 my-3 rounded-md bg-[#00e676]"
                 >
-                  View Details <ArrowRightAlt />
+                  View Details
                 </button>
               </a>
 
-              <a href={project.github}>
+              <a href={project.github} target="_blank">
                 <button
                   type="button"
-                  className=" font-bold text-lg text-gray-800 sm:p-1 p-2 my-3 rounded-md bg-[#00e676]"
+                  className="flex align-middle px-3 font-bold text-lg text-gray-800 sm:p-1 p-1 my-3 rounded-md bg-[#00e676]"
                 >
                   View Github <GitHub />
                 </button>

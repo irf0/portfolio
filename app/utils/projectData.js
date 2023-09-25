@@ -1,6 +1,6 @@
 export default [
   {
-    id: 1,
+    id: "project1",
     name: "Food Delivery App (React Native)",
     imageURL: [
       "/assets/projects/foodash1.jpeg",
@@ -8,13 +8,22 @@ export default [
       "/assets/projects/foodash3.jpeg",
       "/assets/projects/foodash4.jpeg",
     ],
+    videoURL: "/assets/foodashvid.mp4",
     description:
-      "This is a demo food delivery app built using React Native. It is built using the Yelp Fusion API in the backend!",
-    tags: ["Reactjs", "Nextjs", "React Native", "TailwindCSS"],
+      "FoodDash is a demo React Native mobile application that allows users to discover and order food from local restaurants. It leverages the power of the Yelp Fusion API to provide real-time restaurant data, reviews, and menu information.",
+
+    tags: [
+      "React Native",
+      "Yelp Fusion API",
+      "Redux",
+      "React Navigation",
+      "Expo",
+      "Firebase",
+    ],
     github: "https://github.com/irf0/foodash-react-native-app",
   },
   {
-    id: 2,
+    id: "project2",
     name: "Shoe Selling Ecommerce App (React Native)",
     imageURL: [
       "/assets/projects/shoe1.jpeg",
@@ -28,10 +37,21 @@ export default [
       "/assets/projects/shoe9.jpeg",
       "/assets/projects/shoe10.jpeg",
     ],
-    description:
-      "This is a demo ecommerce app. It is a Full stack application built using MongoDB, ExpressJS, React Native and NodeJS (MERN) stack.",
 
-    tags: ["Reactjs", "NodeJS", "ExpressJS", "TailwindCSS"],
+    description:
+      "Impulse Sneaxx is a cutting-edge mobile e-commerce application designed for shoe enthusiasts. Developed using the MERN (MongoDB, Express.js, React Native, Node.js) stack, this app provides a seamless and user-friendly experience for buying shoes online.",
+
+    tags: [
+      "React Native",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Expo",
+      "React Navigation",
+      "Redux",
+      "Axios API",
+      "Stripe",
+    ],
     github: "https://github.com/irf0/NikeFrontend",
   },
 ];

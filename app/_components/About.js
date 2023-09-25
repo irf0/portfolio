@@ -1,7 +1,4 @@
 import React from "react";
-import CustomizedTimeline from "./CustomizedTimeline";
-import MobileTimeline from "./MobileTimeline";
-import { ArrowDownward } from "@mui/icons-material";
 
 function About() {
   return (

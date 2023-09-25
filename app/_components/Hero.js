@@ -51,12 +51,12 @@ function Hero() {
               Let's Connect 🤝
             </button>
           </a>
-          <button
+          {/* <button
             className="mt-4 sm:p-1 sm:font-semibold sm:text-base p-3 px-4 text-gray-800 text-lg font-bold rounded-sm bg-[#00e676]"
             type="button"
           >
             Download CV 📃
-          </button>
+          </button> */}
         </div>
       </div>
 

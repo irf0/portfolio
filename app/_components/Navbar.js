@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { BiMenuAltRight, BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import Sidebar from "./Sidebar";
-import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
+import { GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import { isMobile } from "react-device-detect";
 
 function Navbar() {
@@ -23,7 +23,10 @@ function Navbar() {
     return null;
   }
   return (
-    <div className="p-5 sm:p-0 flex justify-between align-middle border-b border-gray-300 dark:border-gray-700 mb-2">
+    <div
+      id="navbar"
+      className="p-5 sm:p-0 flex justify-between align-middle border-b border-gray-300 dark:border-gray-700 mb-2"
+    >
       {isMobile && (
         <button
           className="sm:visible xl:hidden sm:text-lg"
@@ -34,9 +37,8 @@ function Navbar() {
       )}
       <a href="/">
         <div className="self-center p-2 rounded-md">
-          <h1 className="text-2xl sm:text-lg leading-tight font-extrabold text-[#00e676]">
-            <span> {" <developer "}</span>
-            <span> {"Irfan/>"}</span>
+          <h1 className=" text-2xl sm:text-xl leading-tight font-extrabold text-[#00e676]">
+            {"<Irfan />"}
           </h1>
           <h4 className="dark:text-gray-400 text-gray-900 text-xs text-end -mt-2 -mr-4">
             obsessed about coding!
@@ -103,13 +105,20 @@ function Navbar() {
             href="https://www.linkedin.com/in/dev-irfan/"
             target="_blank"
           >
-            <LinkedIn className="text-blue-800" style={{ fontSize: 28 }} />
+            <LinkedIn className="text-blue-800" style={{ fontSize: 30 }} />
           </a>
           <a id="navlink" href="https://twitter.com/mirfan3053" target="_blank">
             <Twitter className=" text-blue-500" style={{ fontSize: 28 }} />
           </a>
           <a id="navlink" href="https://github.com/irf0" target="_blank">
             <GitHub style={{ fontSize: 25 }} />
+          </a>
+          <a
+            id="navlink"
+            href="https://www.instagram.com/the_mirfan/"
+            target="_blank"
+          >
+            <Instagram style={{ fontSize: 25 }} />
           </a>
 
           {!isMobile && (
