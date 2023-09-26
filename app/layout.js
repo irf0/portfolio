@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const meta = {
   title: "Irfan | Web Developer | Mobile Developer",
-  description: "Skilled to develop both Web and App",
+  description: "Skilled Full Stack Developer.",
 };
 
 export default function RootLayout({ children }) {

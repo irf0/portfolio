@@ -13,10 +13,12 @@ function Services() {
               id={service?.id}
               className="p-5 sm:p-2 shadow-2xl rounded-lg dark:border-gray-900 dark:border sm:-ml-7 sm:border sm:border-gray-300 w-45vw sm:w-80  cursor-pointer"
             >
-              <h1 className="text-8xl font-extrabold">{service?.num}.</h1>
-              <h2 className="text-4xl p-3 align-text-bottom font-extrabold">
-                {service?.name}
-              </h2>
+              <div className=" flex">
+                <h1 className="text-8xl font-extrabold">{service?.num}.</h1>
+                <h2 className="text-4xl p-3 align-text-bottom font-extrabold">
+                  {service?.name}
+                </h2>
+              </div>
 
               <p className="font-semibold p-3 text-lg">{service?.decription}</p>
               <h2 className="text-xl font-bold p-3">What I Offer?</h2>

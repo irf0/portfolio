@@ -20,29 +20,37 @@ function Contact() {
             </span>{" "}
             <br /> Feel free to send a message and I'll get back to you.
           </h1>
-          <input
-            type="text"
-            placeholder="Your name."
-            className="p-4 focus:outline-none rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
-          />
-          <input
-            type="email"
-            placeholder="Your email."
-            className="p-4 focus:outline-none rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
-          />
-          <textarea
-            name="message"
-            placeholder="Your message."
-            rows={4}
-            className="p-4 focus:outline-none rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
-          />
 
-          <button
-            type="button"
-            className="bg-transparent transition-all duration-200 border border-gray-800 hover:bg-[#00e676] rounded-md p-2 w-40 dark:text-gray-800 font-bold"
+          <form
+            className="flex flex-col gap-2"
+            action="https://getform.io/f/f0934354-70d4-4789-b563-0bf6c4195b80"
+            method="POST"
           >
-            Send
-          </button>
+            <input
+              required
+              type="text"
+              placeholder="Your name."
+              className="p-4 focus:outline-none rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
+            />
+            <input
+              required
+              type="email"
+              placeholder="Your email."
+              className="p-4 focus:outline-none rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
+            />
+            <textarea
+              name="message"
+              placeholder="Your message."
+              rows={4}
+              className="p-4 focus:outline-none rounded-lg w-350 sm:w-275 bg-inherit border dark:border-gray-700 border-gray-300"
+            />
+            <button
+              type="submit"
+              className="bg-transparent transition-all duration-200 border dark:border-gray-800 border-gray-300 hover:bg-[#00e676] rounded-md p-2 w-40 dark:text-gray-800 font-bold place-self-center"
+            >
+              Send
+            </button>
+          </form>
         </div>
 
         <div className="border dark:border-gray-700 border-gray-300 rounded-lg my-6 w-350 sm:w-330 flex flex-col p-6 gap-4 place-items-center">

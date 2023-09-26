@@ -1,8 +1,10 @@
-import { LinearProgress } from "@mui/material";
+import { CircularProgress } from "@mui/material";
 import React from "react";
 
-function Loading() {
-  return <LinearProgress />;
+export default function Loading() {
+  return (
+    <div className="flex text-center justify-center my-80">
+      <CircularProgress size={60} />
+    </div>
+  );
 }
-
-export default Loading;
