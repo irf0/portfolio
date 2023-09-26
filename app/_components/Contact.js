@@ -8,8 +8,7 @@ function Contact() {
         contact.
       </h1>
       <h2 className="text-xl sm:text-lg mx-14 text-center font-bold sm:p-5 sm:mx-2">
-        If Everything Sounds Cool till now,{" "}
-        <strong className="border-b-2 border-[#2ffd2f] sm:border-b">
+        <strong className="border-b-2 border-[#2ffd2f] sm:border-b text-2xl">
           Let's work together?
         </strong>
       </h2>
@@ -40,7 +39,7 @@ function Contact() {
 
           <button
             type="button"
-            className=" bg-[#00e676] rounded-md p-2 w-40 dark:text-gray-800 font-bold"
+            className="bg-transparent transition-all duration-200 border border-gray-800 hover:bg-[#00e676] rounded-md p-2 w-40 dark:text-gray-800 font-bold"
           >
             Send
           </button>

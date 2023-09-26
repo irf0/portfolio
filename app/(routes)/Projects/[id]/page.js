@@ -52,6 +52,14 @@ const page = ({ params }) => {
               <p>• {tech}</p>
             ))}
           </div>
+
+          <h2 className="text-2xl font-bold p-1">Key Features</h2>
+
+          <div className="ml-6 p-3">
+            {project?.features?.map((feature) => (
+              <p>• {feature}</p>
+            ))}
+          </div>
         </div>
       </div>
     </div>

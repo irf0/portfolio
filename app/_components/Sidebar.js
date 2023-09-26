@@ -1,4 +1,10 @@
-import { CloseRounded, GitHub, LinkedIn, Twitter } from "@mui/icons-material";
+import {
+  CloseRounded,
+  GitHub,
+  Instagram,
+  LinkedIn,
+  Twitter,
+} from "@mui/icons-material";
 import React, { useEffect, useRef } from "react";
 function Sidebar({ openMenu }) {
   const ref = useRef(null);
@@ -85,6 +91,13 @@ function Sidebar({ openMenu }) {
         </a>
         <a id="navlink" href="https://github.com/irf0" target="_blank">
           <GitHub style={{ fontSize: 32 }} />
+        </a>
+        <a
+          id="navlink"
+          href="https://www.instagram.com/the_mirfan/"
+          target="_blank"
+        >
+          <Instagram style={{ fontSize: 32 }} />
         </a>
       </div>
     </div>

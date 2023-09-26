@@ -45,7 +45,8 @@ function Hero() {
             target="_blank"
           >
             <button
-              className="mt-4 p-3 sm:p-1.5 sm:font-semibold sm:text-base text-gray-800 text-lg font-bold rounded-sm bg-[#00e676]"
+              className="mt-4 p-3 sm:p-1.5 sm:font-semibold sm:text-lg
+               text-gray-800 text-lg font-bold rounded-sm bg-[#00e676]"
               type="button"
             >
               Let's Connect 🤝

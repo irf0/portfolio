@@ -1,0 +1,65 @@
+export default [
+  {
+    id: 1,
+    name: "Front-End Development",
+    frontendimages: [
+      "/assets/tech/figma.png",
+      "/assets/tech/html.png",
+      "/assets/tech/css.png",
+      "/assets/tech/wordpress.png",
+      "/assets/tech/javascript.png",
+      "/assets/tech/reactjs.png",
+      "/assets/tech/nextjs.svg",
+      "/assets/tech/redux.png",
+      "/assets/tech/tailwind.png",
+      "/assets/tech/git.png",
+      "/assets/tech/chatgpt.png",
+    ],
+  },
+
+  {
+    id: 2,
+    name: "Back-End Development",
+    backendimages: [
+      "/assets/tech/javascript.png",
+      "/assets/tech/nodejs.png",
+      "/assets/tech/mongodb.png",
+      "/assets/tech/api.png",
+      "/assets/tech/git.png",
+      "/assets/tech/chatgpt.png",
+    ],
+  },
+
+  {
+    id: 3,
+    name: "Full Stack Development",
+    fullstackimages: [
+      "/assets/tech/figma.png",
+      "/assets/tech/html.png",
+      "/assets/tech/css.png",
+      "/assets/tech/wordpress.png",
+      "/assets/tech/javascript.png",
+      "/assets/tech/reactjs.png",
+      "/assets/tech/nextjs.svg",
+      "/assets/tech/redux.png",
+      "/assets/tech/tailwind.png",
+      "/assets/tech/nodejs.png",
+      "/assets/tech/mongodb.png",
+      "/assets/tech/api.png",
+      "/assets/tech/chatgpt.png",
+      "/assets/tech/git.png",
+    ],
+  },
+  {
+    id: 4,
+    name: "Mobile Development",
+    mobiledevimages: [
+      "/assets/tech/reactjs.png",
+      "/assets/tech/expo.png",
+      "/assets/tech/redux.png",
+      "/assets/tech/android.png",
+      "/assets/tech/white-ios.png",
+      "/assets/tech/git.png",
+    ],
+  },
+];

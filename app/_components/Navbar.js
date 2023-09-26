@@ -76,6 +76,13 @@ function Navbar() {
         >
           projects.
         </a>
+        <a
+          id="navlink"
+          className="dark:hover:text-white hover:text-black cursor-pointer"
+          href="#services"
+        >
+          services.
+        </a>
 
         <a
           id="navlink"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import skillsData from "../utils/skillsData";
 
 function Skills() {
   return (
@@ -26,66 +27,19 @@ function Skills() {
 
           <h1 className="font-bold mt-4">Tech Stack</h1>
           <div className="flex flex-wrap gap-1">
-            <Image
-              src="/assets/tech/figma.png"
-              width={40}
-              height={40}
-              alt="irfan-figma"
-            />
-            <Image
-              src="/assets/tech/html.png"
-              width={40}
-              height={40}
-              alt="irfan-html"
-            />
-            <Image
-              src="/assets/tech/css.png"
-              width={40}
-              height={40}
-              alt="irfan-css"
-            />
-            <Image
-              src="/assets/tech/wordpress.png"
-              width={40}
-              height={40}
-              alt="irfan-css"
-            />
-            <Image
-              src="/assets/tech/javascript.png"
-              width={40}
-              height={40}
-              alt="irfan-js"
-            />
-            <Image
-              src="/assets/tech/reactjs.png"
-              width={40}
-              height={40}
-              alt="irfan-react"
-            />
-            <Image
-              src="/assets/tech/nextjs.svg"
-              width={40}
-              height={40}
-              className=" dark:bg-gray-500 rounded-full"
-            />
-            <Image
-              src="/assets/tech/redux.png"
-              width={40}
-              height={40}
-              alt="irfan-redux"
-            />
-            <Image
-              src="/assets/tech/tailwind.png"
-              width={40}
-              height={40}
-              alt="irfan-tw"
-            />
-            <Image
-              src="/assets/tech/chatgpt.png"
-              width={38}
-              height={36}
-              alt="irfan-chatgpt"
-            />
+            {skillsData?.map((techImages) =>
+              techImages?.frontendimages?.map((image, index) => (
+                <Image
+                  src={image}
+                  width={40}
+                  height={40}
+                  alt="frontend-dev"
+                  className={`${
+                    index === 6 && "dark:bg-gray-500 rounded-full"
+                  }`}
+                />
+              ))
+            )}
           </div>
         </div>
 
@@ -105,42 +59,11 @@ function Skills() {
           </p>
           <h1 className="font-bold mt-4">Tech Stack</h1>
           <div className="flex">
-            <Image
-              src="/assets/tech/javascript.png"
-              width={40}
-              height={40}
-              alt="irfan-js"
-            />
-            <Image
-              src="/assets/tech/nodejs.png"
-              width={40}
-              height={40}
-              alt="irfan-nodejs"
-            />
-            <Image
-              src="/assets/tech/mongodb.png"
-              width={40}
-              height={40}
-              alt="irfan-mongodb"
-            />
-            <Image
-              src="/assets/tech/api.png"
-              width={40}
-              height={40}
-              alt="irfan-api"
-            />
-            <Image
-              src="/assets/tech/chatgpt.png"
-              width={38}
-              height={36}
-              alt="irfan-chatgpt"
-            />
-            <Image
-              src="/assets/tech/git.png"
-              width={40}
-              height={40}
-              alt="irfan-git"
-            />
+            {skillsData?.map((techImages) =>
+              techImages?.backendimages?.map((image, index) => (
+                <Image src={image} width={40} height={40} alt="backend-dev" />
+              ))
+            )}
           </div>
         </div>
         <div className="p-5 shadow-2xl dark:border-gray-900 dark:border rounded-lg w-80 sm:w-72 sm:-ml-4">
@@ -160,79 +83,19 @@ function Skills() {
           </p>
           <h1 className="font-bold mt-4">Tech Stack</h1>
           <div className="flex flex-wrap gap-1">
-            <Image
-              src="/assets/tech/figma.png"
-              width={40}
-              height={40}
-              alt="irfan-figma"
-            />
-            <Image
-              src="/assets/tech/html.png"
-              width={40}
-              height={40}
-              alt="irfan-html"
-            />
-            <Image
-              src="/assets/tech/css.png"
-              width={40}
-              height={40}
-              alt="irfan-css"
-            />
-            <Image
-              src="/assets/tech/javascript.png"
-              width={40}
-              height={40}
-              alt="irfan-js"
-            />
-            <Image
-              src="/assets/tech/reactjs.png"
-              width={40}
-              height={40}
-              alt="irfan-react"
-            />
-            <Image
-              src="/assets/tech/redux.png"
-              width={40}
-              height={40}
-              alt="irfan-redux"
-            />
-            <Image
-              src="/assets/tech/tailwind.png"
-              width={40}
-              height={40}
-              alt="irfan-tw"
-            />
-            <Image
-              src="/assets/tech/nodejs.png"
-              width={40}
-              height={40}
-              alt="irfan-nodejs"
-            />
-            <Image
-              src="/assets/tech/expressjs.png"
-              width={39}
-              height={38}
-              alt="irfan-express"
-              className="dark:bg-slate-100 rounded-full"
-            />
-            <Image
-              src="/assets/tech/mongodb.png"
-              width={40}
-              height={40}
-              alt="irfan-mongodb"
-            />
-            <Image
-              src="/assets/tech/api.png"
-              width={40}
-              height={40}
-              alt="irfan-api"
-            />
-            <Image
-              src="/assets/tech/git.png"
-              width={40}
-              height={40}
-              alt="irfan-git"
-            />
+            {skillsData?.map((techImages) =>
+              techImages?.fullstackimages?.map((image, index) => (
+                <Image
+                  src={image}
+                  width={40}
+                  height={40}
+                  alt="fullstack-dev"
+                  className={`${
+                    index === 6 && "dark:bg-gray-500 rounded-full"
+                  }`}
+                />
+              ))
+            )}
           </div>
         </div>
         <div className="p-5 shadow-2xl dark:border-gray-900 dark:border rounded-lg w-80 sm:w-72 sm:-ml-4">
@@ -252,45 +115,19 @@ function Skills() {
           </p>
           <h1 className="font-bold mt-4">Tech Stack</h1>
           <div className="flex gap-1">
-            <Image
-              src="/assets/tech/javascript.png"
-              width={40}
-              height={40}
-              alt="irfan-js"
-            />
-            <Image
-              src="/assets/tech/reactjs.png"
-              width={40}
-              height={40}
-              alt="irfan-react"
-            />
-            <Image
-              src="/assets/tech/expo.png"
-              width={38}
-              height={30}
-              alt="irfan-expo"
-              className="dark:bg-slate-100 dark:rounded-full dark:p-1 gap-2"
-            />
-            <Image
-              src="/assets/tech/redux.png"
-              width={40}
-              height={40}
-              alt="irfan-redux"
-            />
-            <Image
-              src="/assets/tech/android.png"
-              width={40}
-              height={40}
-              alt="irfan-android"
-            />
-
-            <Image
-              src="/assets/tech/white-ios.png"
-              width={40}
-              height={40}
-              alt="irfan-ios"
-              className="bg-black dark:bg-transparent rounded-full"
-            />
+            {skillsData?.map((techImages) =>
+              techImages?.mobiledevimages?.map((image, index) => (
+                <Image
+                  src={image}
+                  width={40}
+                  height={40}
+                  alt="mobile-dev"
+                  className={`${
+                    index === 1 && "dark:bg-white h-9 w-9 rounded-full"
+                  }`}
+                />
+              ))
+            )}
           </div>
         </div>
       </div>
