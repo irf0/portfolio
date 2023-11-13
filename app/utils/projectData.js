@@ -1,6 +1,59 @@
 export default [
   {
     id: "project1",
+    name: "Workforce Rider App (React Native)",
+    imageURL: [
+      "/assets/projects/work1.png",
+      "/assets/projects/work2.png",
+      "/assets/projects/work3.png",
+      "/assets/projects/work4.png",
+      "/assets/projects/work5.png",
+      "/assets/projects/work6.png",
+      "/assets/projects/work7.png",
+      "/assets/projects/work8.png",
+      "/assets/projects/work9.png",
+      "/assets/projects/work10.jpeg",
+    ],
+    videoURL: "/assets/workvid.mp4",
+    description:
+      "Workforce Riders is a React Native mobile application which is a part of a bigger project which consists of 3 apps such as Users App, Riders(Drivers) App and Admin Panel. This app is built for the driver who pickup and drop the workers to and fro their workplace. Features are built considering the usability and user experience of the driver. ",
+    note: "**Some parts of the video is hidden because of security reasons. Github code is not available for this project because it's a company project but I can show the code locally.",
+
+    techs: [
+      "React Native",
+      "Expo for Development",
+      "Firebase Realtime Database",
+      "Firebase Authentication",
+      "React Navigation for routing",
+      "React Native Bottom Tabs",
+      "Stripe for Payment",
+    ],
+    features: [
+      "Rider's assigned jobs are shown inside the jobs section",
+      "Rider's current assigned job is shown in the homepage as well.",
+      "Job consists of all the job details such as timing, people to pickup, location and assigned vehicle is also shown",
+      "Rider view the route (opens in Google map)",
+      "Rider can mark the attendance of workers",
+      "Rider can Live Chat with customer care",
+      "Rider can send queries through Help Desk",
+      "Ongoing, Closed Chat History is shown using green and red",
+      "Ongoing, Closed help queries is shown with conditional banner showing status",
+      "Rider can request fuel fill by choosing his assigned vehicle from list",
+      "Rider can see his fuel fill requests history with status banner conditionally in real time",
+    ],
+    tags: [
+      "React Native",
+      "Yelp Fusion API",
+      "Redux",
+      "React Navigation",
+      "Expo",
+      "Firebase Firestore",
+    ],
+    github: "",
+  },
+
+  {
+    id: "project2",
     name: "Food Delivery App (React Native)",
     imageURL: [
       "/assets/projects/foodash1.jpeg",
@@ -43,7 +96,7 @@ export default [
   },
 
   {
-    id: "project2",
+    id: "project3",
     name: "Ecommerce App for Shoes (React Native)",
     imageURL: [
       "/assets/projects/shoe1.jpeg",

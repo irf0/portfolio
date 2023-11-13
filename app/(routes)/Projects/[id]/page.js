@@ -44,6 +44,7 @@ const page = ({ params }) => {
           <p className="font-semibold text-lg flex-wrap p-3">
             {project?.description}
           </p>
+          <h3 className="font-bold text-lg flex-wrap p-3">{project?.note}</h3>
 
           <h2 className="text-2xl font-bold p-1">Technologies Used</h2>
 
