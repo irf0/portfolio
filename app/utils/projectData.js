@@ -41,14 +41,7 @@ export default [
       "Rider can request fuel fill by choosing his assigned vehicle from list",
       "Rider can see his fuel fill requests history with status banner conditionally in real time",
     ],
-    tags: [
-      "React Native",
-      "Yelp Fusion API",
-      "Redux",
-      "React Navigation",
-      "Expo",
-      "Firebase Firestore",
-    ],
+    tags: ["React Native", "Expo", "Firebase", "React Navigation"],
     github: "",
   },
 
