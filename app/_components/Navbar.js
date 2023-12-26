@@ -27,14 +27,14 @@ function Navbar() {
       id="navbar"
       className="p-5 sm:p-0 flex justify-between align-middle border-b border-gray-300 dark:border-gray-800 mb-2"
     >
-      {isMobile && (
+      {/* {isMobile && (
         <button
           className="sm:visible xl:hidden sm:text-lg"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
           {theme === "light" ? <BiSolidMoon /> : <BiSolidSun />}
         </button>
-      )}
+      )} */}
       <a href="/">
         <div className="self-center p-2 rounded-md">
           <h1 className=" text-2xl sm:text-xl leading-tight font-extrabold text-[#00e676]">
@@ -122,14 +122,14 @@ function Navbar() {
             <Instagram style={{ fontSize: 25 }} />
           </a>
 
-          {!isMobile && (
+          {/* {!isMobile && (
             <button
               style={{ fontSize: 23 }}
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               {theme === "light" ? <BiSolidMoon /> : <BiSolidSun />}
             </button>
-          )}
+          )} */}
         </div>
         <div className="fixed z-10">
           {isSidebarOpen && <Sidebar openMenu={openMenu} />}
