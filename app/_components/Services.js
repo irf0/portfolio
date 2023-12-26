@@ -11,7 +11,7 @@ function Services() {
           {servicesData.map((service) => (
             <div
               id={service?.id}
-              className="p-5 sm:p-2 shadow-2xl rounded-lg dark:border-gray-900 dark:border sm:-ml-7 sm:border sm:border-gray-300 w-45vw sm:w-80  cursor-pointer"
+              className="p-5 sm:p-2 shadow-2xl rounded-lg dark:border-gray-900 dark:border sm:-ml-7 sm:border sm:border-gray-300 w-45vw sm:w-80  cursor-pointer sm:my-3"
             >
               <div className=" flex">
                 <h1 className="text-8xl font-extrabold">{service?.num}.</h1>

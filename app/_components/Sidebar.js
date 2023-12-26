@@ -24,7 +24,7 @@ function Sidebar({ openMenu }) {
   return (
     <div
       ref={ref}
-      className="absolute right-0.5 sm:p-0 sm:-mr-4 overflow-hidden overflow-x-hidden z-50 h-87vh w-72 sm:-mt-5 rounded-tl-lg rounded-bl-lg shadow-2xl dark:border border-gray-950 shadow-gray-950 bg-white dark:bg-gray-800 duration-100 ease-out animate-slide-in backdrop-contrast-100"
+      className="absolute right-0.5 sm:p-0 sm:-mr-4 overflow-hidden overflow-x-hidden z-50 h-87vh w-72 sm:-mt-5 rounded-tl-lg rounded-bl-lg shadow-2xl dark:border border-gray-950 shadow-gray-950 bg-gray-950 dark:bg-gray-800 duration-100 ease-out animate-slide-in backdrop-contrast-100"
     >
       <div className="flex">
         <button type="button" onClick={openMenu}>

@@ -3,14 +3,15 @@ import { RoughNotationGroup } from "react-rough-notation";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import { isMobile } from "react-device-detect";
 const WordHighlight = dynamic(() => import("./WordHighlight"));
 
 function Hero() {
   const colors = ["#F59E0B", "#dedede", "#00e676", "#10B981", "#3B82F6"];
   return (
     <div className="flex mb-10 justify-around sm:flex-col border-b dark:border-gray-800 border-gray-300 p-24 sm:p-5">
-      <div className="bg-[#00e676] text-[#e3e2e2] rounded-full place-self-center justify-center h-48 w-48 sm:flex lg:hidden xl:hidden">
-        <Image src="/assets/irfandp2.png" width={150} height={40} alt="cover" />
+      <div className=" text-[#e3e2e2] rounded-full place-self-center justify-center h-48 w-48 sm:flex lg:hidden xl:hidden">
+        <Image src="/assets/irfandp2.png" width={200} height={40} alt="cover" />
       </div>
       <div>
         <h1 className="text-6xl sm:text-4xl sm:-ml-6 font-extrabold -ml-16 mb-5">
@@ -62,15 +63,13 @@ function Hero() {
         </div>
       </div>
 
-      <div className="flex justify-end">
-        {/* <div className=" bg-[#00e676] rounded-lg h-96 w-72 sm:hidden md:hidden"> */}
+      <div className="flex justify-end sm:hidden md:hidden">
         <Image
           src="/assets/irfandp2.png"
           width={500}
           height={150}
           alt="cover"
         />
-        {/* </div> */}
       </div>
     </div>
   );

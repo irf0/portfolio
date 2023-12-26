@@ -123,10 +123,7 @@ function Navbar() {
           </a>
 
           {/* {!isMobile && (
-            <button
-              style={{ fontSize: 23 }}
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
+            <button style={{ fontSize: 23 }} onClick={() => setTheme("dark")}>
               {theme === "light" ? <BiSolidMoon /> : <BiSolidSun />}
             </button>
           )} */}

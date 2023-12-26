@@ -5,8 +5,8 @@ import { GitHub } from "@mui/icons-material";
 //This is Projects component
 function Projects() {
   return (
-    <div className="p-10 mx-10 sm:p-5 sm:mx-2 sm:justify-center border-b border-gray-300 dark:border-gray-800">
-      <h1 className="text-5xl sm:text-3xl font-extrabold">projects.</h1>
+    <div className="p-10 mx-10 sm:p-5 sm:mx-2 sm:my-3 sm:justify-center border-b border-gray-300 dark:border-gray-800">
+      <h1 className="text-5xl font-extrabold">projects.</h1>
       <p className="p-4 font-bold text-xl">
         Here are some projects I have worked on.
       </p>
@@ -15,11 +15,11 @@ function Projects() {
         Mobile
       </h2>
 
-      <div className="flex p-5 sm:p-2 sm:justify-normal justify-center gap-4 sm:gap-2 sm:flex-col select-none">
+      <div className="flex p-5 sm:p-2  sm:justify-normal justify-center gap-4 sm:gap-4 sm:my-3 sm:flex-col select-none">
         {projectData.map((project) => (
           <div
             key={project.id}
-            className="p-5 sm:p-2 shadow-2xl rounded-lg dark:border-gray-900 dark:border sm:-ml-7 sm:border sm:border-gray-300 w-45vw sm:w-80  cursor-pointer"
+            className="p-5 sm:p-2 sm:my-3 shadow-2xl rounded-lg dark:border-gray-900 dark:border sm:-ml-7 sm:border sm:border-gray-300 w-45vw sm:w-80  cursor-pointer"
           >
             <div className="flex gap-3 justify-center flex-wrap">
               {project?.imageURL?.slice(0, 2).map((image) => (
