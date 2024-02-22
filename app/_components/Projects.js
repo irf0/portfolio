@@ -15,13 +15,13 @@ function Projects() {
         Mobile
       </h2>
 
-      <div className="flex p-5 sm:p-2  sm:justify-normal justify-center gap-4 sm:gap-4 sm:my-3 sm:flex-col select-none">
+      <div className="flex p-5 sm:p-2 flex-wrap  sm:justify-normal justify-center gap-4 sm:gap-4 sm:my-3 sm:flex-col select-none">
         {projectData.map((project) => (
           <div
             key={project.id}
             className="p-5 sm:p-2 sm:my-3 shadow-2xl rounded-lg dark:border-gray-900 dark:border sm:-ml-7 sm:border sm:border-gray-300 w-45vw sm:w-80  cursor-pointer"
           >
-            <div className="flex gap-3 justify-center flex-wrap">
+            <div className="flex  gap-3 justify-center flex-wrap">
               {project?.imageURL?.slice(0, 2).map((image) => (
                 <img
                   src={image}

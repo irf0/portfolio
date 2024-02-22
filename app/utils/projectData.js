@@ -142,4 +142,41 @@ export default [
     ],
     github: "https://github.com/irf0/NikeFrontend",
   },
+  {
+    id: "project4",
+    name: "Chatmate",
+    imageURL: [
+      "/assets/projects/chat1.jpeg",
+      "/assets/projects/chat2.jpeg",
+      "/assets/projects/chat3.jpeg",
+      "/assets/projects/chat4.jpeg",
+      "/assets/projects/chat5.jpeg",
+      "/assets/projects/chat6.jpeg",
+    ],
+
+    description:
+      "ChatMate is a sleek and user-friendly chat application built using React Native and Firebase. With ChatMate, users can easily connect with friends and family in real-time, sharing messages, photos, and more, all within a secure and reliable environment.",
+
+    techs: [
+      "React Native",
+      "Expo for Development",
+      "Firebase Realtime Database",
+      "Firebase Authentication",
+      "React Navigation for routing",
+      "React Native Bottom Tabs",
+      "Expo-av for audio/video",
+      "Firebase Cloud Storage",
+    ],
+    features: [
+      "Real-Time Messaging : ChatMate leverages Firebase's real-time database to ensure instant message delivery, creating a seamless chatting experience for users.",
+
+      "User Authentication: Secure user authentication is implemented through Firebase Authentication, allowing users to sign up, log in, and reset passwords with ease.",
+
+      "Intuitive User Interface: The app boasts a clean and intuitive user interface designed to enhance user experience, making it effortless to navigate and use.",
+
+      "Media Sharing: In addition to text messages, users can share photos and other media files with their contacts, enhancing communication and interaction.",
+    ],
+    tags: ["React Native", "Expo", "Firebase", "React Navigation"],
+    github: "https://github.com/irf0/react-native-chatmate",
+  },
 ];
